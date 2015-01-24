@@ -21,20 +21,11 @@
 > ```php
 >	require_once upme_path . 'widgets/upme-login-dropdown-widget.php';
 >	```
->	add line 113: 
+>	add line 113 - 116: 
 > ```php
-> wp_register_script('upme_dropdown', upme_url . 'js/jquery.dropdown.js', array('jquery'));
-> ```
->	add line 114:
-> ```php
+> 	wp_register_script('upme_dropdown', upme_url . 'js/jquery.dropdown.js', array('jquery'));
 >	wp_enqueue_script('upme_dropdown');
-> ```
->	add line 115: 
-> ```php
 >	wp_enqueue_style( 'upme_dropdown_style', upme_url . 'css/jquery.dropdown.css');
-> ```
->	add line 116: 
-> ```php
 >	wp_enqueue_script('upme_dropdown_style');
 > ```
 	
